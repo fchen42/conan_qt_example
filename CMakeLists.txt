@@ -19,7 +19,6 @@ include_directories(
 )
 
 add_executable(conan_qt_example
-    ./widget.h
     ./widget.cpp
     ./main.cpp
 )
