@@ -1,0 +1,13 @@
+[requires]
+qt/6.1.0
+
+[generators]
+cmake_find_package
+cmake_paths
+qt  # 生成 qt.conf 文件，处理 plugins 路径问题
+
+[options]
+Qt:shared=True  # 默认 static，无法加载 plugins
+
+[imports]
+./bin, *.dll  -> ./  # 拷贝 Qt 的动态链接库至文件夹
