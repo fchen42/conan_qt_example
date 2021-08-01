@@ -1,5 +1,6 @@
 #include "ui_widget.h"
 #include "widget.h"
+#include <QMessageBox>
 
 
 Widget::Widget(QWidget *parent)
@@ -12,4 +13,8 @@ Widget::Widget(QWidget *parent)
 Widget::~Widget()
 {
   delete ui;
+}
+
+void Widget::greeting() {
+  QMessageBox::information(this, "Greeting", "Hello world");
 }

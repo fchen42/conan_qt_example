@@ -15,6 +15,9 @@ class Widget : public QWidget
   explicit Widget(QWidget *parent = 0);
   ~Widget();
 
+ private slots:
+  void greeting();
+
  private:
   Ui::Widget *ui;
 };

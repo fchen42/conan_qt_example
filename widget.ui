@@ -28,5 +28,25 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>greeting()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>161</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>greeting()</slot>
+ </slots>
 </ui>
